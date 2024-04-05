@@ -5,7 +5,7 @@ RUN         apt update -y \
 			&& apt install -y curl ca-certificates openssl git tar gnupg2 sqlite3 fontconfig tzdata iproute2 libfreetype6 software-properties-common \
 			&& useradd -d /home/container -m container
 
-RUN			apt install -y openjdk-17-jdk
+RUN         apt install -y openjdk-18-jdk
 
 USER        container
 ENV         USER=container HOME=/home/container
